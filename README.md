@@ -29,6 +29,32 @@
 
 ## 快速开始
 
+### 方式 0：使用 Skills（推荐 ⭐）
+
+最简单的使用方式是安装 noai-flavor skill，一键触发去除 AI 味儿。
+
+#### Claude Code
+
+```bash
+# 1. 添加 noai-flavor skills 仓库
+/plugin marketplace add yiancode/noai-flavor https://github.com/yiancode/noai-flavor
+
+# 2. 安装 skill
+/plugin install noai-flavor@yiancode/noai-flavor
+```
+
+使用：
+```bash
+/noai-flavor writing    # 文本内容去 AI 味儿
+/noai-flavor web        # 网站开发去 AI 味儿
+```
+
+#### 其他 AI 工具
+
+查看完整安装指南：[skills/README.md](skills/README.md)
+
+---
+
 ### 文本内容去 AI 味儿
 
 #### 方式一：直接使用 Prompt
@@ -78,6 +104,7 @@
 
 ```
 noai-flavor/
+├── skills/            # AI Agent Skills（一键触发）
 ├── patterns/          # AI 反模式库（要避免的写法）
 │   ├── frontend/      # 前端开发反模式
 │   └── ...            # 文本内容反模式
@@ -160,6 +187,53 @@ noai-flavor/
 - **[Screenshot to Code](https://screenshottocode.com)** - 截图转代码
 
 完整列表：[resources/design-tools.md](resources/design-tools.md)
+
+## 使用示例
+
+### Skills 使用示例
+
+#### 文本写作
+
+```bash
+/noai-flavor writing
+
+写一篇关于时间管理的公众号文章，800 字左右
+```
+
+AI 会：
+- 自动应用反 AI 规则
+- 不用套话开头
+- 不用三段论结构
+- 不用 emoji 装饰
+- 生成自然的文章内容
+
+#### 网站开发
+
+```bash
+/noai-flavor web
+
+开发一个个人技术博客首页
+```
+
+AI 会：
+- 询问风格偏好（科技感/优雅/极简）
+- 应用反 AI 规则（不用蓝紫色、不用 Hero + 三卡片）
+- 使用推荐资源（Iconify 图标、Pexels 图片）
+- 生成有个性的网站代码
+
+完整示例：[examples/before-after/](examples/before-after/)
+
+## 7 个去除网站 AI 味儿的方法
+
+1. **让 AI 参考真实网站** - 提供具体参考对象
+2. **设计优先开发** - 先做 Demo，再开发功能
+3. **丰富网站图片** - 使用 Iconify、Pexels、unDraw 等资源
+4. **提示词约束** - 反向提示、角色设定、语境注入
+5. **Agent Skills** - 使用 noai-flavor skill（本项目提供）
+6. **反 AI 味儿组件库** - 使用 Aceternity UI、Magic UI 等特色库
+7. **自主配色** - 使用 Coolors、Adobe Color 生成独特配色
+
+完整说明：[patterns/frontend/7-methods.md](patterns/frontend/7-methods.md)
 
 ## 贡献
 
