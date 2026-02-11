@@ -116,7 +116,8 @@ noai-flavor/
 │   ├── ui-libraries.md      # UI 组件库
 │   ├── image-resources.md   # 图片资源
 │   ├── color-tools.md       # 配色工具
-│   └── design-tools.md      # 设计工具
+│   ├── design-tools.md      # 设计工具
+│   └── quality-scoring.md   # 质量评分体系
 ├── examples/          # 对比示例（AI味 vs 自然）
 ├── integration/       # 工具集成指南
 └── scripts/           # 辅助脚本
@@ -130,9 +131,20 @@ noai-flavor/
 |--------|------|------|
 | Emoji 滥用 | 用 ✅❌🎯 做列表标记 | [patterns/emoji-abuse.md](patterns/emoji-abuse.md) |
 | 套话陈词 | "不是...而是..."、"众所周知" | [patterns/cliche-phrases.md](patterns/cliche-phrases.md) |
-| 模板结构 | 死板的总分总、三段论 | [patterns/template-structures.md](patterns/template-structures.md) |
-| 机械过渡 | "接下来"、"下面我们来看" | [patterns/transition-patterns.md](patterns/transition-patterns.md) |
+| 模板结构 | 总分总、三段论、挑战与展望 | [patterns/template-structures.md](patterns/template-structures.md) |
+| 机械过渡 | "接下来"、"下面我们来看"、填充短语 | [patterns/transition-patterns.md](patterns/transition-patterns.md) |
 | 列表强迫症 | 什么都要列成 1234 | [patterns/list-obsession.md](patterns/list-obsession.md) |
+| 夸大意义 | "标志着关键时刻"、"深远影响" | [patterns/significance-inflation.md](patterns/significance-inflation.md) |
+| 宣传式语言 | "坐落于"、"充满活力的" | [patterns/promotional-language.md](patterns/promotional-language.md) |
+| 模糊归因 | "专家认为"、"研究表明" | [patterns/vague-attribution.md](patterns/vague-attribution.md) |
+| AI 高频词汇 | "此外"、"深入探讨"、"格局" | [patterns/ai-vocabulary.md](patterns/ai-vocabulary.md) |
+| 肤浅分析 | "反映了"、"象征着"假装有深度 | [patterns/superficial-analysis.md](patterns/superficial-analysis.md) |
+| 语法小花招 | 系动词回避、否定排比、同义词循环 | [patterns/grammar-tricks.md](patterns/grammar-tricks.md) |
+| 格式滥用 | 破折号过度、粗体过度 | [patterns/formatting-overuse.md](patterns/formatting-overuse.md) |
+| 聊天机器人痕迹 | "希望对您有帮助"、知识截止声明 | [patterns/chatbot-artifacts.md](patterns/chatbot-artifacts.md) |
+| 谄媚语气 | "好问题！"、"您说得完全正确！" | [patterns/sycophantic-tone.md](patterns/sycophantic-tone.md) |
+| 过度限定 | "可以潜在地可能被认为" | [patterns/over-hedging.md](patterns/over-hedging.md) |
+| 通用积极结论 | "未来可期"、"前景光明" | [patterns/generic-conclusions.md](patterns/generic-conclusions.md) |
 
 ### 前端开发反模式
 
@@ -234,6 +246,20 @@ AI 会：
 7. **自主配色** - 使用 Coolors、Adobe Color 生成独特配色
 
 完整说明：[patterns/frontend/7-methods.md](patterns/frontend/7-methods.md)
+
+## 推荐资源（补充）
+
+### 质量评分
+
+写完文章后，用 [质量评分体系](resources/quality-scoring.md) 量化检查 AI 味去除效果。5 个维度打分（直接性、节奏、信任度、真实性、精炼度），总分 50。
+
+## 致谢
+
+本项目的文本反模式部分参考了以下项目和资料：
+
+- [blader/humanizer](https://github.com/blader/humanizer) - 英文版 AI 写作痕迹去除指南
+- [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) - humanizer 中文翻译版
+- [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) - 原始知识来源，由 WikiProject AI Cleanup 维护
 
 ## 贡献
 
